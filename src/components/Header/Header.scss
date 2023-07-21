@@ -1,0 +1,25 @@
+.navbar {
+  z-index: 2;
+  border-bottom: 1px solid #fff;
+  .container-fluid {
+    z-index: 2;
+    .collapse {
+      .navbar-nav {
+        .search-item {
+          position: relative;
+          .search {
+            width: 20rem;
+            outline: none;
+          }
+          .search-icon {
+            color: #111;
+            position: absolute;
+            top: 0.5rem;
+            right: 0.7rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
