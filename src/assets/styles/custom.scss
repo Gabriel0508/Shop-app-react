@@ -1,2 +1,33 @@
 @import '~bootstrap/scss/bootstrap.scss';
-$body-bg: #000;
+@import "./mixins.scss";
+@import "./variables.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Titillium-Web;
+  }
+  
+  //Scrollbar
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $white;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @include bg-red;
+    border-radius: 15px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    @include bg-red;
+  }
+  

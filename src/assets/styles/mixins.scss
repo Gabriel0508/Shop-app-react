@@ -1,0 +1,40 @@
+@import "./variables.scss";
+
+@each $color, $value in $app-colors {
+  .text-#{$color} {
+    color: $value;
+  }
+
+  .border-#{$color} {
+    border-color: $value !important;
+  }
+
+  .hover\:text-#{$color} {
+    &:hover {
+      color: darken($value, 5%);
+    }
+  }
+
+  .bg-#{$color} {
+    background-color: $value;
+  }
+
+  .bg-opacity-30-#{$color} {
+    background-color: rgba($value, 0.3);
+  }
+
+  .bg-opacity-50-#{$color} {
+    background-color: rgba($value, 0.5);
+  }
+
+  .hover\:bg-#{$color} {
+    &:hover {
+      background-color: darken($value, 5%);
+    }
+  }
+}
+
+@mixin bg-red {
+    background: transparent linear-gradient(45deg, #a70000 0%, #ff5252 100%) 0 0
+    no-repeat padding-box;
+}

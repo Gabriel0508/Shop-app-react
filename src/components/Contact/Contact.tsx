@@ -1,10 +1,12 @@
 import "./Contact.scss";
 import Header from "../Header/Header";
+import Banner from "../Banner/Banner";
 
 const Contact = () => {
   return (
     <>
       <Header />
+      <Banner title={'Contact'}/>
       <p className="text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime rem
         recusandae modi deserunt enim dignissimos odio eligendi tempora nihil

@@ -5,7 +5,7 @@ const Dashboard = () => {
   return (
     <>
       <Header />
-      <Banner />
+      <Banner title={'Welcome to the'} brand={'eShop'} description={'This is the main page'}/>
     </>
   );
 };
