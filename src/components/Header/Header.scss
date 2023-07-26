@@ -1,20 +1,30 @@
+@import "../../assets/styles/custom.scss";
+
 .navbar {
   z-index: 2;
-  border-bottom: 1px solid #fff;
+  transition: all 0.2s ease-in-out;
   .container-fluid {
     z-index: 2;
     .collapse {
       .navbar-nav {
+        .nav-item {
+          .nav-link {
+            border-radius: 5px;
+            &:hover {
+              background-color: $light-red;
+            }
+          }
+        }
         .search-item {
           position: relative;
           .search {
             width: 20rem;
             outline: none;
+            border: 1px solid #a70000;
           }
           .search-icon {
-            color: #111;
             position: absolute;
-            top: 0.5rem;
+            top: 0.3rem;
             right: 0.7rem;
             cursor: pointer;
           }
@@ -22,4 +32,8 @@
       }
     }
   }
+}
+
+.bg-red {
+  @include bg-red;
 }

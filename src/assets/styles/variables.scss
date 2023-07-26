@@ -1,0 +1,17 @@
+$red: #ff0000;
+$dark-red: 	#a70000;
+$light-red: #ff5252;
+$white: #fff;
+$gray: #dadada;
+
+$app-colors: () !default;
+$app-colors: map-merge(
+  (
+    "red": $red,
+    "dark-red": $dark-red,
+    "light-red": $light-red,
+    "white": $white,
+    "gray": $gray
+  ),
+  $app-colors
+);

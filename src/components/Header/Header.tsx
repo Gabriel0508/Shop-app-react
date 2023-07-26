@@ -19,24 +19,26 @@ const Header = () => {
 
   const [collapsed, setCollapsed] = useState(true);
   const toggleNavbar = () => {
-    setCollapsed(false);
+    setCollapsed(!collapsed);
   };
 
-  const searchItem = () => {};
+  const searchItem = () => {
+    console.log("works");
+  };
 
   return (
     <div>
       <nav
         className={
           colorChange
-            ? "colorChange navbar-expand-lg position-fixed bg-danger w-100"
+            ? "navbar navbar-expand-lg position-fixed bg-red shadow w-100"
             : "navbar navbar-expand-lg position-fixed navbar-light w-100"
         }
       >
         <div className="container-fluid">
-          <a className="navbar-brand text-light" href="/">
+          <Link className="navbar-brand text-light" to="/">
             eShop
-          </a>
+          </Link>
 
           <button
             className="navbar-toggler text-light"
@@ -66,7 +68,7 @@ const Header = () => {
                     placeholder="Search"
                   />
                   <FontAwesomeIcon
-                    className="search-icon"
+                    className="search-icon text-dark-red"
                     icon={faSearch}
                     onClick={searchItem}
                   />
