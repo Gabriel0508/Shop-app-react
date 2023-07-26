@@ -31,7 +31,7 @@ const Header = () => {
       <nav
         className={
           colorChange
-            ? "navbar navbar-expand-lg position-fixed bg-red shadow w-100"
+            ? "navbar navbar-expand-lg position-fixed bg-dark-red shadow w-100"
             : "navbar navbar-expand-lg position-fixed navbar-light w-100"
         }
       >
@@ -75,12 +75,12 @@ const Header = () => {
                 </form>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-light" to="/">
+                <Link className="nav-link text-light" to="/account">
                   Account
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-light" to="/">
+                <Link className="nav-link text-light" to="/cart">
                   <FaShoppingCart />
                 </Link>
               </li>
