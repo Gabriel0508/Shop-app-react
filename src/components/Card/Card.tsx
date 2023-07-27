@@ -18,8 +18,8 @@ const Card = (props: any) => {
             <p>haha</p>
           </div>
           <div className="buttons">
-            <FaShareAlt className="share me-2" />
-            <FaShoppingCart className="cart" />
+            <FaShareAlt className="share me-2 cursor-pointer" />
+            <FaShoppingCart className="cart cursor-pointer" />
           </div>
         </div>
       </div>
