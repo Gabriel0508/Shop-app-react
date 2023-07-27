@@ -1,5 +1,6 @@
 import Banner from "../Banner/Banner";
 import Card from "../Card/Card";
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 
 const Dashboard = () => {
@@ -11,6 +12,7 @@ const Dashboard = () => {
         brand={"eShop"}
         description={"This is the main page"}
       />
+      
       <div className="container-fluid my-4">
         <div className="row g-3">
           <div className="col-sm-12 col-md-6 col-lg-3">
@@ -81,6 +83,8 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 };
